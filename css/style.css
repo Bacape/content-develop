@@ -100,8 +100,32 @@
 .section-about {
   padding: 3.2rem 0 9.6rem 0;
   background-color: #dee2e6;
+  position: relative;
+}
+.about-img--shape {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 30%;
+  height: 100%;
+  background-image: url("../img/feature-two-shape-2.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+}
+.about-img--dots {
+  position: absolute;
+  top: 25%;
+  right: 70%;
+  width: 20%;
+  height: 50%;
+  background-image: url("../img/one-dot.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
 }
 .about-box {
+  position: relative;
   background-color: #f1f3f5;
   padding: 3.2rem 2rem;
   border-radius: 2rem;
@@ -131,7 +155,7 @@
 }
 .section-how {
   padding: 3.2rem 0 6.4rem 0;
-  background-color: #dee2e6;
+  background-color: #f8f9fa;
 }
 .how-box__text {
   margin: 0 0 1.2rem 2.4rem;
@@ -153,13 +177,20 @@
 }
 .section-us {
   padding: 3.2rem 0 9.6rem 0;
-  background-color: #dee2e6;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(201, 152, 127, 0.35),
+      rgba(112, 99, 92, 0.35)
+    ),
+    url("../img/blog-two-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .feature-icon {
   color: #edf2ff;
   width: 3.2rem;
   height: 3.2rem;
-  background-color: #748ffc;
+  background-color: #a47c68;
   padding: 1.6rem;
   margin-bottom: 2.4rem;
   border-radius: 50%;
@@ -171,12 +202,16 @@
   margin-bottom: 0.8rem;
 }
 .feature-text {
+  padding: 1.2rem;
   font-size: 1.8rem;
   line-height: 1.8;
+  color: #f8f9fa;
+  background-color: #a47c68;
+  border-radius: 20%;
 }
 .section-choice {
   padding: 3.2rem 0 9.6rem 0;
-  background-color: #dee2e6;
+  background-color: #f8f9fa;
 }
 .choice-box {
   padding-bottom: 3.2rem;
@@ -216,7 +251,7 @@
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #364fc7;
+  color: #a47c68;
 }
 .list-text {
   font-size: 2rem;
@@ -230,7 +265,7 @@
 .choice-button:visited {
   font-size: 2rem;
   text-align: center;
-  background-color: #4263eb;
+  background-color: #a47c68;
   color: #f8f9fa;
   text-decoration: none;
   display: inline-block;
@@ -242,11 +277,18 @@
 
 .choice-button:hover,
 .choice-button:active {
-  background-color: #364fc7;
+  background-color: #8b827d;
 }
 .section-order {
   padding: 3.2rem 0 9.6rem 0;
-  background-color: #dee2e6;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(201, 152, 127, 0.35),
+      rgba(112, 99, 92, 0.35)
+    ),
+    url("../img/white-wall-living-room-have-sofa-decoration-3d-rendering.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .order-box {
   display: grid;
@@ -278,7 +320,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
-  color: #364fc7;
+  color: #a47c68;
 }
 .order-form input,
 .order-form textarea,
@@ -301,7 +343,7 @@
 }
 .footer {
   padding: 3.2rem 0;
-  background-color: #4263eb;
+  background-color: #3c3531;
   border-top: 1.75px solid rgba(17, 17, 17, 0.393);
 }
 .logo-footer {
@@ -331,7 +373,7 @@
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.05;
-  color: #f8f9fa;
+  color: #8b827d;
   margin-bottom: 1.2rem;
 }
 .navigation-footer {
@@ -344,11 +386,11 @@
 .link-footer:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #f8f9fa;
+  color: #8b827d;
   transition: all 0.3s;
 }
 
 .link-footer:hover,
 .link-footer:active {
-  color: #dee2e6;
+  color: #f8f9fa;
 }
