@@ -16,7 +16,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 3rem;
-  color: #222;
+  color: #dee2e6;
 }
 .logo {
   height: 5.2rem;
@@ -63,24 +63,29 @@
 .hero {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(173, 173, 173, 0.102),
-      rgba(15, 4, 4, 0.111)
+      rgb(139, 130, 125, 0.51),
+      rgb(139, 130, 125, 0.51)
     ),
-    url("../img/paiting.jpg");
+    url("../img/Hero-foto.jpg");
   background-size: cover;
   padding: 15rem 0;
 }
+.hero-box {
+  display: flex;
+  flex-direction: column;
+}
 .hero-text {
-  width: 74%;
+  width: 75%;
   display: inline-block;
+  align-self: center;
   padding: 6.4rem 3.2rem;
 }
 .hero-button {
   display: grid;
+  grid-auto-flow: row;
   row-gap: 3.2rem;
-  align-self: end;
+  align-self: center;
 }
-
 .button-second:link,
 .button-second:visited {
   font-size: 3rem;
@@ -117,7 +122,7 @@
   position: absolute;
   top: 25%;
   right: 70%;
-  width: 20%;
+  width: 18%;
   height: 50%;
   background-image: url("../img/one-dot.png");
   background-size: cover;
@@ -135,11 +140,19 @@
 }
 .about-box__img {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-.img-about {
+.about-img {
   border-radius: 50%;
-  width: 50%;
-  border: 3px solid #333;
+  width: 30%;
+  border: 3px solid #8b827d;
+  margin-bottom: 1.6rem;
+}
+.about-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #3c3531;
 }
 .about-box__text {
   width: 50%;
@@ -147,7 +160,7 @@
   justify-content: center;
   align-content: center;
   padding: 2.4rem;
-  border: 2px solid #333;
+  border: 2px solid #8b827d;
   border-radius: 2rem;
 }
 .about-box__text p {
@@ -159,6 +172,7 @@
 }
 .how-box__text {
   margin: 0 0 1.2rem 2.4rem;
+  border-bottom: 4px solid #8b827d;
 }
 .how-number {
   font-size: 7.4rem;
@@ -296,7 +310,8 @@
   border-radius: 1.2rem;
   overflow: hidden;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.352);
-  background-image: linear-gradient(to right bottom, #edf2ff, #dee2e6);
+  background-image: linear-gradient(to right bottom, #a47c68, #dee2e6);
+  border: 1px solid rgba(17, 17, 17, 0.393);
 }
 .order-box__options {
   padding: 4.8rem 6.4rem 2.4rem 6.4rem;
@@ -310,6 +325,7 @@
 .order-button {
   grid-column: 1 / 3;
   justify-self: center;
+  margin-bottom: 1.2rem;
 }
 .order-img {
   width: 100%;
@@ -320,7 +336,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
-  color: #a47c68;
+  color: #444;
 }
 .order-form input,
 .order-form textarea,
