@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3c3531;
-  padding: 2rem 4.8rem;
+  background-color: #1b1f2b;
+  padding: 2rem 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #8b827d;
+  color: #ababab;
   font-weight: 500;
   font-size: 2rem;
   transition: all 0.3s;
@@ -52,7 +52,7 @@
   padding: 1.2rem 2.4rem;
   border-radius: 0.9rem;
   color: #f8f9fa;
-  background-color: #a47c68;
+  background-color: #e16e3a;
   border: 1.2px solid #333;
 }
 .nav-link.nav-link--main:hover,
@@ -63,28 +63,30 @@
 .hero {
   height: 100vh;
   background-image: linear-gradient(
-      rgb(139, 130, 125, 0.51),
-      rgb(139, 130, 125, 0.51)
+      rgba(43, 58, 78, 0.511),
+      rgba(43, 58, 78, 0.511)
     ),
     url("../img/Hero-foto.jpg");
   background-size: cover;
-  padding: 15rem 0;
-}
-.hero-box {
+  padding: 20vh 4rem 10vh 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.hero-text {
-  width: 75%;
+.hero-title {
   display: inline-block;
-  align-self: center;
-  padding: 6.4rem 3.2rem;
+  font-size: 5.2rem;
+  line-height: 1.5;
+  color: #cdcdcd;
+  margin: 0 auto 5rem auto;
+  max-width: 1000px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
 }
 .hero-button {
-  display: grid;
-  grid-auto-flow: row;
-  row-gap: 3.2rem;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 .button-second:link,
 .button-second:visited {
@@ -104,8 +106,9 @@
 
 .section-about {
   padding: 3.2rem 0 9.6rem 0;
-  background-color: #dee2e6;
+  background-color: #2b3a4e;
   position: relative;
+  border-bottom: solid 5rem #32647c;
 }
 .about-img--shape {
   position: absolute;
@@ -131,7 +134,7 @@
 }
 .about-box {
   position: relative;
-  background-color: #f1f3f5;
+  background-color: #32647c;
   padding: 3.2rem 2rem;
   border-radius: 2rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.352);
@@ -152,7 +155,7 @@
 .about-text {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #3c3531;
+  color: #b5a472;
 }
 .about-box__text {
   width: 50%;
@@ -164,25 +167,26 @@
   border-radius: 2rem;
 }
 .about-box__text p {
+  color: #b5a472;
   font-weight: 400;
 }
 .section-how {
   padding: 3.2rem 0 6.4rem 0;
-  background-color: #f8f9fa;
+  background-color: #2b3a4e;
 }
 .how-box__text {
   margin: 0 0 1.2rem 2.4rem;
-  border-bottom: 4px solid #8b827d;
+  border-bottom: 4px solid #e16f3a9e;
 }
 .how-number {
   font-size: 7.4rem;
   font-weight: 600;
-  color: #222;
+  color: #8b827d;
 }
 .how-description {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #343a40;
+  color: #b5a472;
   letter-spacing: 0.75px;
 }
 .how-img {
@@ -193,44 +197,45 @@
   padding: 3.2rem 0 9.6rem 0;
   background-image: linear-gradient(
       to right bottom,
-      rgba(201, 152, 127, 0.35),
-      rgba(112, 99, 92, 0.35)
+      rgba(43, 58, 78, 0.911),
+      rgba(43, 58, 78, 0.612)
     ),
     url("../img/blog-two-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .feature-icon {
   color: #edf2ff;
   width: 3.2rem;
   height: 3.2rem;
-  background-color: #a47c68;
+  background-color: #e16e3a;
   padding: 1.6rem;
   margin-bottom: 2.4rem;
   border-radius: 50%;
 }
 .feature-tittle {
   font-size: 3rem;
-  color: #333;
+  color: #222;
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
 .feature-text {
-  padding: 1.2rem;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.8;
-  color: #f8f9fa;
-  background-color: #a47c68;
+  color: #222;
   border-radius: 20%;
 }
 .section-choice {
   padding: 3.2rem 0 9.6rem 0;
-  background-color: #f8f9fa;
+  background-color: #2b3a4e;
 }
 .choice-box {
   padding-bottom: 3.2rem;
   width: 75%;
   border-radius: 11px;
+  background-color: #32647c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,7 +250,7 @@
 }
 .choice-tittle {
   font-size: 3rem;
-  color: #555;
+  color: #e16e3a;
   font-weight: 700;
   margin-bottom: 2.4rem;
 }
@@ -265,11 +270,11 @@
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #a47c68;
+  color: #e16e3a;
 }
 .list-text {
   font-size: 2rem;
-  color: #333;
+  color: #b5a472;
   font-weight: 600;
 }
 .choice-box__button {
@@ -279,7 +284,7 @@
 .choice-button:visited {
   font-size: 2rem;
   text-align: center;
-  background-color: #a47c68;
+  background-color: #e16e3a;
   color: #f8f9fa;
   text-decoration: none;
   display: inline-block;
@@ -296,9 +301,8 @@
 .section-order {
   padding: 3.2rem 0 9.6rem 0;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(201, 152, 127, 0.35),
-      rgba(112, 99, 92, 0.35)
+      rgba(43, 58, 78, 0.511),
+      rgba(43, 58, 78, 0.511)
     ),
     url("../img/white-wall-living-room-have-sofa-decoration-3d-rendering.jpg");
   background-size: cover;
@@ -310,8 +314,11 @@
   border-radius: 1.2rem;
   overflow: hidden;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.352);
-  background-image: linear-gradient(to right bottom, #a47c68, #dee2e6);
-  border: 1px solid rgba(17, 17, 17, 0.393);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(50, 100, 124),
+    rgb(50, 100, 124)
+  );
 }
 .order-box__options {
   padding: 4.8rem 6.4rem 2.4rem 6.4rem;
@@ -336,7 +343,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
-  color: #444;
+  color: #b5a472;
 }
 .order-form input,
 .order-form textarea,
@@ -345,11 +352,15 @@
   padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
-  color: inherit;
+  color: #444;
   border: none;
   background-color: #f8f9fa;
   border-radius: 0.9rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  color: rgb(84, 84, 84);
 }
 .order-message {
   grid-column: 1 / span 2;
@@ -359,7 +370,7 @@
 }
 .footer {
   padding: 3.2rem 0;
-  background-color: #3c3531;
+  background-color: #1b1f2b;
   border-top: 1.75px solid rgba(17, 17, 17, 0.393);
 }
 .logo-footer {
@@ -386,10 +397,10 @@
   font-weight: 500;
 }
 .address {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.05;
-  color: #8b827d;
+  line-height: 1.5;
+  color: #ababab;
   margin-bottom: 1.2rem;
 }
 .navigation-footer {
@@ -402,11 +413,11 @@
 .link-footer:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #8b827d;
+  color: #ababab;
   transition: all 0.3s;
 }
 
 .link-footer:hover,
 .link-footer:active {
-  color: #f8f9fa;
+  color: #ababab;
 }
