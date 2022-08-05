@@ -106,7 +106,7 @@ p {
   font-size: 5.2rem;
   margin: 0 0 3.2rem 3.2rem;
   line-height: 1.5;
-  color: #333;
+  color: #555;
 }
 .heading-secondary {
   font-size: 4.4rem;
@@ -133,6 +133,7 @@ p {
 .button:link,
 .button:visited {
   font-size: 3rem;
+  display: inline-block;
   text-align: center;
   background-color: #e16e3a;
   color: #f8f9fa;
@@ -140,11 +141,10 @@ p {
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
   transition: all 0.3s;
-  border: 2.5px solid #333;
 }
 .button:hover,
 .button:active {
-  background-color: #8b827d;
+  background-color: #b5a472;
 }
 .box-img {
   display: flex;
