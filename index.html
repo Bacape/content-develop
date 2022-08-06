@@ -17,35 +17,36 @@
 
 <body>
   <header class="header">
-    <a class="logo-main" href="#">
+    <a class="logo-main" href="#hero">
       <span class="logo">Petr Bačovský</span>
     </a>
     <nav class="navigation">
       <ul class="nav-list--main">
-        <li><a class="nav-link" href="#">O Nás</a></li>
-        <li><a class="nav-link" href="#">Jak to u nás probíhá</a></li>
-        <li><a class="nav-link" href="#">Kontakt</a></li>
+        <li><a class="nav-link" href="#o-nas">O Nás</a></li>
+        <li><a class="nav-link" href="#jak-to-probiha">Jak to u nás probíhá</a></li>
+        <li><a class="nav-link" href="#nase-sluzby">Naše služby</a></li>
+        <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
         <li>
-          <a class="nav-link nav-link--main" href="#">Objednat šikulu</a>
+          <a class="nav-link nav-link--main" href="#objednat-sikulu">Objednat šikulu</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- HERO -->
-    <section class="hero section-hero">
+    <section class="hero section section-hero" id="hero">
       <h1 class="hero-title">
         Oživte i svoji nemovitost. Malování a tapetování s úsměvem.
       </h1>
       <div class="hero-button">
-        <a href="#" class="button">Objednat šikulu</a>
-        <a href="#" class=" button-second bounce">
+        <a href="#objednat-sikulu" class="button">Objednat šikulu</a>
+        <a href="#o-nas" class="button-second bounce">
           <ion-icon name="arrow-down-outline"></ion-icon>
         </a>
       </div>
     </section>
     <!-- ABOUT -->
-    <section class="section-about">
+    <section class="section section-about" id="o-nas">
       <div class="container">
         <div class="about-img--shape" role="img" aria-label="shapes"></div>
         <span class="subheading">Něco o nás</span>
@@ -70,7 +71,7 @@
         d="M0,32L40,80C80,128,160,224,240,240C320,256,400,192,480,149.3C560,107,640,85,720,69.3C800,53,880,43,960,37.3C1040,32,1120,32,1200,64C1280,96,1360,160,1400,192L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
       </path>
     </svg><!-- HOW -->
-    <section class="section-how">
+    <section class="section section-how" id="jak-to-probiha">
       <div class="container">
         <span class="subheading">Jak to funguje</span>
         <h2 class="heading-secondary">Všechno jen v pár krocích</h2>
@@ -114,7 +115,7 @@
       </div>
     </section>
     <!-- US -->
-    <section class="section-us">
+    <section class="section section-us" id="proc-my">
       <div class="container">
         <span class="subheading">Proč zrovna my?</span>
         <h2 class="heading-secondary">Naše zásady</h2>
@@ -147,7 +148,7 @@
       </div>
     </section>
     <!-- CHOICE -->
-    <section class="section-choice">
+    <section class="section section-choice" id="nase-sluzby">
       <div class="container">
         <span class="subheading">Výběr je jen na vás</span>
         <h2 class="heading-secondary">My zvládneme vše</h2>
@@ -205,7 +206,7 @@
         </div>
     </section>
     <!-- ORDER -->
-    <section class="section-order">
+    <section class="section section-order" id="objednat-sikulu">
       <div class="container">
         <span class="subheading subheading--dark">Jdeme na to!</span>
         <h2 class="heading-secondary heading-secondary--dark">Zde si nás objednáte</h2>
@@ -244,7 +245,7 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="section footer" id="kontakt">
     <div class="container">
       <div class="grid grid--3-cols">
         <div class="logo-footer">
@@ -277,6 +278,7 @@
         </nav>
       </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

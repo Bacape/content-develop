@@ -4,10 +4,11 @@
   align-items: center;
   background-color: #1b1f2b;
   padding: 2rem 4rem;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 55;
   border-bottom: 0.75px solid rgba(17, 17, 17, 0.393);
 }
 .logo-main:link,
@@ -52,8 +53,9 @@
   transition: all 0.3s;
 }
 .nav-link:hover,
-.nav-link:active {
-  color: #f8f9fa;
+.nav-link:active,
+.nav-link.active {
+  color: #e67e22;
 }
 .nav-link.nav-link--main:link,
 .nav-link.nav-link--main:visited {
@@ -99,15 +101,13 @@
 .button-second:visited {
   position: absolute;
   bottom: 0;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #f8f9fa;
   transition: all 0.3s;
   align-self: center;
 }
-.button-second:hover,
-.button-second:active {
-  color: #2b3a4e;
-  font-size: 3rem;
+.button-second:hover {
+  font-size: 6rem;
 }
 .bounce {
   animation: bounce 2s infinite;
