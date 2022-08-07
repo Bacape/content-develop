@@ -112,41 +112,31 @@
   animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
 .section-about {
   padding: 3.2rem 0 9.6rem 0;
   background-color: #2b3a4e;
   position: relative;
+  overflow: hidden;
 }
-.about-img--shape {
+.section-about:before {
+  content: '';
+  width: 3000px;
+  height: 3000px;
+  border-radius: 50%;
+  background-color: rgba(230, 126, 34, 0.8);
   position: absolute;
-  top: 0%;
-  right: 0%;
-  width: 30%;
-  height: 100%;
-  background-image: url("../img/feature-two-shape-2.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%,0);
+  z-index: 0;
+}
+.section-about .container {
+  position: relative;
+  z-index: 2;
 }
 .about-box {
   position: relative;
-  background-color: rgba(0,0,0,0.4);
+  background-color: #1A232F;
   padding: 3.2rem 2rem;
   border-radius: 2rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.352);
@@ -189,6 +179,39 @@
 .section-how {
   padding: 0 0 6.4rem 0;
   background-color: #2b3a4e;
+  position: relative;
+}
+.section-how .container {
+  position: relative;
+  z-index: 2;
+}
+.section-how:before {
+  content: '';
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgba(230, 126, 34, 0.3);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  margin-left: -250px;
+  z-index: 0;
+  animation: floatingUp 15s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.section-how:after {
+  content: '';
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgba(230, 126, 34, 0.3);
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 0;
+  margin-right: -250px;
+  animation: floatingDown 15s ease-in infinite;
+  animation-delay: 1s;
 }
 .how-box__text {
   margin: 0 0 1.2rem 0;
@@ -197,7 +220,7 @@
 .how-number {
   font-size: 7.4rem;
   font-weight: 600;
-  color: #8b827d;
+  color: #eaeaea;
 }
 .how-description {
   font-size: 1.6rem;
@@ -256,7 +279,7 @@
 .choice-box {
   padding-bottom: 3.2rem;
   border-radius: 11px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: #1A232F;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,8 +348,9 @@
       rgba(43, 58, 78, 0.511)
     ),
     url("../img/white-wall-living-room-have-sofa-decoration-3d-rendering.jpg");
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .order-box {
   display: grid;
