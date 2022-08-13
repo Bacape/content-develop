@@ -76,8 +76,6 @@
     width: 35%;
   }
   .about-box__text p {
-    color: #eaeaea;
-    font-weight: 400;
     font-size: 2.4rem;
   }
 }
@@ -91,5 +89,8 @@
   }
   .grid-choice {
     grid-template-columns: 1fr;
+  }
+  .about-box__text p {
+    font-size: 2rem;
   }
 }
