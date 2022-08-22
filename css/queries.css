@@ -94,3 +94,113 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 26em) {
+  .heading-secondary {
+    font-size: 5.2rem;
+  }
+  .heading-tertiary {
+    font-size: 4.2rem;
+  }
+  .how-number {
+    font-size: 8.2rem;
+  }
+  .how-description {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .subheading {
+    font-size: 2.2rem;
+  }
+  .section-about:before {
+    width: 60rem;
+    height: 60rem;
+    bottom: 20%;
+  }
+  .section-how:before {
+    width: 40rem;
+    height: 40rem;
+  }
+  .section-how:after {
+    width: 40rem;
+    height: 40rem;
+  }
+  .about-box {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .about-box__img {
+    width: 80%;
+  }
+  .about-box__text {
+    width: 100%;
+  }
+  .about-img {
+    border-radius: 50%;
+  }
+  .about-box__text p {
+    font-size: 2.2rem;
+  }
+  .how-img {
+    width: 120%;
+  }
+  .section-us {
+    background-size: auto;
+  }
+  .grid-us {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .feature {
+    width: 60%;
+  }
+  .choice-box {
+    width: 90%;
+  }
+  .choice-img {
+    height: 30rem;
+  }
+  .choice-title {
+    font-size: 4.6rem;
+  }
+  .list-icon {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .list-text {
+    font-size: 2.8rem;
+  }
+  .choice-button:link,
+  .choice-button:visited {
+    font-size: 2.6rem;
+  }
+  .section-order {
+    background-size: auto;
+  }
+  .order-box {
+    grid-template-columns: 1fr;
+  }
+  .order-img {
+    display: none;
+  }
+  .order-form {
+    grid-template-columns: 1fr;
+  }
+  .order-button {
+    grid-column: 1;
+    margin-top: 1.2rem;
+  }
+  .order-form label {
+    font-size: 2.6rem;
+  }
+  .button:link,
+  .button:visited {
+    font-size: 3rem;
+  }
+  .logo-footer {
+    grid-column: 1 / 4;
+  }
+  .logo-main:link,
+  .logo-main:visited {
+    font-size: 3.6rem;
+  }
+}
