@@ -224,9 +224,15 @@
   animation: floatingDown 15s ease-in infinite;
   animation-delay: 1s;
 }
+.how-box {
+  display: flex;
+  gap: 16rem;
+  margin-bottom: 18rem;
+}
 .how-box__text {
-  margin: 0 0 1.2rem 0;
-  border-bottom: 4px solid #e16f3a9e;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .how-number {
   font-size: 7.4rem;
@@ -234,14 +240,16 @@
   color: #eaeaea;
 }
 .how-description {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #eaeaea;
   letter-spacing: 0.75px;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 4px solid #e16f3a9e;
 }
 .how-img {
-  width: 70%;
+  width: 45%;
+  height: 90%;
   border-radius: 1.5rem;
 }
 .section-us {
@@ -256,8 +264,9 @@
   background-position: center;
   background-attachment: fixed;
 }
-.grid-us {
-  grid-template-columns: repeat(2, 1fr);
+.us-boxes {
+  display: flex;
+  gap: 20rem;
 }
 .feature-icon {
   color: #edf2ff;
@@ -272,6 +281,10 @@
   background-color: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 16rem;
 }
 .feature-title {
   font-size: 3rem;
@@ -289,8 +302,10 @@
   padding: 3.2rem 0 9.6rem 0;
   background-color: #2b3a4e;
 }
-.grid-choice {
-  grid-template-columns: repeat(2, 1fr);
+.choice-boxes {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 10rem;
 }
 .choice-box {
   padding-bottom: 3.2rem;
