@@ -1,28 +1,76 @@
-@media (max-width: 86em) {
-  html {
-    font-size: 56.25%;
-  }
-  .section-about:before {
-    width: 250rem;
-    height: 250rem;
-  }
-}
-@media (max-width: 75em) {
-  .hero-title {
-    font-size: 4.6rem;
-    margin-bottom: 3.8rem;
-    max-width: 90rem;
-  }
-}
-@media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
-  }
+@media (max-width: 1399.99px) {
   .section-about:before {
     width: 200rem;
     height: 200rem;
   }
+}
+@media (max-width: 1199.98px) {
+  .section-about:before {
+    width: 150rem;
+    height: 150rem;
+  }
+  .section-how:before {
+    width: 35rem;
+    height: 35rem;
+  }
+  .section-how:after {
+    width: 35rem;
+    height: 35rem;
+  }
+  .logo-main:link,
+  .logo-main:visited {
+    font-size: 2.4rem;
+  }
+  .navigation {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .nav-list--main {
+    gap: 3rem;
+  }
+  .order-img {
+    display: none;
+  }
+  .order-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-about:before {
+    width: 100rem;
+    height: 100rem;
+    bottom: 20%;
+  }
+  .heading-secondary {
+    font-size: 5rem;
+  }
+  .subheading {
+    font-size: 2.6rem;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .about-text {
+    font-size: 2.4rem;
+  }
+  .how-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .how-box__change {
+    flex-direction: column-reverse;
+  }
+  .how-number {
+    font-size: 8rem;
+  }
+  .heading-tertiary {
+    font-size: 3.4rem;
+  }
+  .how-description {
+    font-size: 2.4rem;
+  }
+
   .nav-button-mobile {
     display: block;
   }
@@ -64,117 +112,46 @@
     flex-direction: column;
     gap: 4.8rem;
   }
-}
-@media (max-width: 44em) {
-  html {
-    font-size: 37%;
-  }
-  .about-box__img {
-    width: 50%;
-  }
-  .about-img {
-    width: 35%;
-  }
-  .about-box__text p {
-    font-size: 2.4rem;
-  }
-}
-@media (max-width: 34em) {
-  .section-about:before {
-    width: 150rem;
-    height: 150rem;
-  }
-  .grid--4-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-choice {
-    grid-template-columns: 1fr;
-  }
-  .about-box__text p {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 26em) {
-  .heading-secondary {
-    font-size: 5.2rem;
-  }
-  .heading-tertiary {
-    font-size: 4.2rem;
-  }
-  .how-number {
-    font-size: 8.2rem;
-  }
-  .how-description {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  .subheading {
-    font-size: 2.2rem;
-  }
-  .section-about:before {
-    width: 60rem;
-    height: 60rem;
-    bottom: 20%;
-  }
-  .section-how:before {
-    width: 40rem;
-    height: 40rem;
-  }
-  .section-how:after {
-    width: 40rem;
-    height: 40rem;
-  }
-  .about-box {
+  .us-boxes {
     flex-direction: column;
-    gap: 1.8rem;
-  }
-  .about-box__img {
-    width: 80%;
-  }
-  .about-box__text {
-    width: 100%;
-  }
-  .about-img {
-    border-radius: 50%;
-  }
-  .about-box__text p {
-    font-size: 2.2rem;
-  }
-  .how-img {
-    width: 120%;
-  }
-  .section-us {
-    background-size: auto;
-  }
-  .grid-us {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    gap: 0rem;
+    align-items: center;
   }
   .feature {
-    width: 60%;
+    width: 65%;
+    margin-bottom: 8rem;
+    align-items: center;
+  }
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .feature-title {
+    font-size: 4rem;
+  }
+  .feature-text {
+    font-size: 2.4rem;
+  }
+  .choice-boxes {
+    flex-direction: column;
+    align-items: center;
   }
   .choice-box {
-    width: 90%;
-  }
-  .choice-img {
-    height: 30rem;
+    width: 65%;
   }
   .choice-title {
-    font-size: 4.6rem;
+    font-size: 4.4rem;
+  }
+  .list-item {
+    font-size: 2.4rem;
   }
   .list-icon {
-    width: 3.4rem;
-    height: 3.4rem;
-  }
-  .list-text {
-    font-size: 2.8rem;
+    width: 4rem;
+    height: 4rem;
   }
   .choice-button:link,
   .choice-button:visited {
-    font-size: 2.6rem;
-  }
-  .section-order {
-    background-size: auto;
+    font-size: 2.8rem;
   }
   .order-box {
     grid-template-columns: 1fr;
@@ -184,6 +161,12 @@
   }
   .order-form {
     grid-template-columns: 1fr;
+    margin: 0 10rem 0 10rem;
+  }
+  .order-form input,
+  .order-form textarea,
+  .order-form select {
+    margin-bottom: 5rem;
   }
   .order-button {
     grid-column: 1;
