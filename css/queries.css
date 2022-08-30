@@ -76,6 +76,15 @@
     height: 100rem;
     bottom: 20%;
   }
+  .section-how:before {
+    display: none;
+  }
+  .section-how:after {
+    display: none;
+  }
+  .how-box {
+    margin-top: 4rem;
+  }
   .heading-secondary {
     font-size: 5rem;
   }
@@ -88,14 +97,6 @@
   }
   .about-text {
     font-size: 2.4rem;
-  }
-  .how-box {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5rem;
-  }
-  .how-box__change {
-    flex-direction: column-reverse;
   }
   .how-number {
     font-size: 8rem;
@@ -129,12 +130,8 @@
   .feature-text {
     font-size: 2.4rem;
   }
-  .choice-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
   .choice-box {
-    width: 65%;
+    width: 47%;
     margin-top: 5rem;
   }
   .choice-title {
@@ -207,11 +204,14 @@
     margin-top: 5rem;
     width: 100%;
   }
-  .section-how:before {
-    display: none;
+  .how-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 6rem;
   }
-  .section-how:after {
-    display: none;
+  .how-box__change {
+    flex-direction: column-reverse;
   }
   .how-box__text {
     width: 100%;
@@ -220,8 +220,14 @@
     width: 70%;
     height: 90%;
   }
-  .us-boxes {
-    align-items: center;
+  .feature-title {
+    font-size: 2.6rem;
+  }
+  .feature-text {
+    font-size: 2rem;
+  }
+  .choice-boxes {
+    justify-content: center;
   }
   .choice-box {
     width: 80%;
