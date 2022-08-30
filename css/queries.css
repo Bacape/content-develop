@@ -226,9 +226,6 @@
   .feature-text {
     font-size: 2rem;
   }
-  .choice-boxes {
-    justify-content: center;
-  }
   .choice-box {
     width: 80%;
   }
@@ -241,12 +238,6 @@
   }
   .order-button {
     grid-column: 1;
-  }
-  .logo-footer {
-    grid-column: 1;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
   }
   @media (max-width: 575.98px) {
     .subheading {
@@ -322,11 +313,14 @@
       width: 100%;
     }
     .choice-title {
-      font-size: 3.4rem;
+      font-size: 2.4rem;
+    }
+    .list-text {
+      font-size: 1.6rem;
     }
     .choice-button:link,
     .choice-button:visited {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
     }
     .section-order {
       background-attachment: unset;
@@ -342,6 +336,12 @@
     }
     .order-box__options {
       padding: 4.8rem 2rem 2.4rem 2rem;
+    }
+    .logo-footer {
+      grid-column: 1;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr;
     }
   }
 }
