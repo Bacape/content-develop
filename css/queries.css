@@ -1,28 +1,44 @@
-@media (max-width: 86em) {
-  html {
-    font-size: 56.25%;
-  }
-  .section-about:before {
-    width: 250rem;
-    height: 250rem;
-  }
-}
-@media (max-width: 75em) {
-  .hero-title {
-    font-size: 4.6rem;
-    margin-bottom: 3.8rem;
-    max-width: 90rem;
-  }
-}
-@media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
-  }
+@media (max-width: 1399.99px) {
   .section-about:before {
     width: 200rem;
     height: 200rem;
   }
+}
+@media (max-width: 1199.98px) {
+  .section-about:before {
+    width: 150rem;
+    height: 150rem;
+  }
+  .section-how:before {
+    width: 35rem;
+    height: 35rem;
+  }
+  .section-how:after {
+    width: 35rem;
+    height: 35rem;
+  }
+  .logo-main:link,
+  .logo-main:visited {
+    font-size: 2.4rem;
+  }
+  .navigation {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .nav-list--main {
+    gap: 3rem;
+  }
+  .order-img {
+    display: none;
+  }
+  .order-box {
+    grid-template-columns: 1fr;
+  }
+  .message-order {
+    grid-column: 1 / span 2;
+  }
+}
+@media (max-width: 991.98px) {
   .nav-button-mobile {
     display: block;
   }
@@ -55,6 +71,42 @@
   .nav-open .nav-mobile-icon[name="menu-outline"] {
     display: none;
   }
+  .section-about:before {
+    width: 100rem;
+    height: 100rem;
+    bottom: 20%;
+  }
+  .section-how:before {
+    display: none;
+  }
+  .section-how:after {
+    display: none;
+  }
+  .how-box {
+    margin-top: 4rem;
+  }
+  .heading-secondary {
+    font-size: 5rem;
+  }
+  .subheading {
+    font-size: 2.6rem;
+  }
+  .about-img {
+    width: 16rem;
+    height: 16rem;
+  }
+  .about-text {
+    font-size: 2.4rem;
+  }
+  .how-number {
+    font-size: 8rem;
+  }
+  .heading-tertiary {
+    font-size: 3.4rem;
+  }
+  .how-description {
+    font-size: 2.4rem;
+  }
   .nav-link:link,
   .nav-link:visited {
     font-weight: 700;
@@ -64,117 +116,37 @@
     flex-direction: column;
     gap: 4.8rem;
   }
-}
-@media (max-width: 44em) {
-  html {
-    font-size: 37%;
+  .feature {
+    width: 45%;
+    margin-top: 6rem;
   }
-  .about-box__img {
-    width: 50%;
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
   }
-  .about-img {
-    width: 35%;
+  .feature-title {
+    font-size: 3rem;
   }
-  .about-box__text p {
+  .feature-text {
     font-size: 2.4rem;
   }
-}
-@media (max-width: 34em) {
-  .section-about:before {
-    width: 150rem;
-    height: 150rem;
-  }
-  .grid--4-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-choice {
-    grid-template-columns: 1fr;
-  }
-  .about-box__text p {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 26em) {
-  .heading-secondary {
-    font-size: 5.2rem;
-  }
-  .heading-tertiary {
-    font-size: 4.2rem;
-  }
-  .how-number {
-    font-size: 8.2rem;
-  }
-  .how-description {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  .subheading {
-    font-size: 2.2rem;
-  }
-  .section-about:before {
-    width: 60rem;
-    height: 60rem;
-    bottom: 20%;
-  }
-  .section-how:before {
-    width: 40rem;
-    height: 40rem;
-  }
-  .section-how:after {
-    width: 40rem;
-    height: 40rem;
-  }
-  .about-box {
-    flex-direction: column;
-    gap: 1.8rem;
-  }
-  .about-box__img {
-    width: 80%;
-  }
-  .about-box__text {
-    width: 100%;
-  }
-  .about-img {
-    border-radius: 50%;
-  }
-  .about-box__text p {
-    font-size: 2.2rem;
-  }
-  .how-img {
-    width: 120%;
-  }
-  .section-us {
-    background-size: auto;
-  }
-  .grid-us {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .feature {
-    width: 60%;
-  }
   .choice-box {
-    width: 90%;
-  }
-  .choice-img {
-    height: 30rem;
+    width: 47%;
+    margin-top: 5rem;
   }
   .choice-title {
-    font-size: 4.6rem;
+    font-size: 4rem;
+  }
+  .list-item {
+    font-size: 2rem;
   }
   .list-icon {
-    width: 3.4rem;
-    height: 3.4rem;
-  }
-  .list-text {
-    font-size: 2.8rem;
+    width: 3rem;
+    height: 3rem;
   }
   .choice-button:link,
   .choice-button:visited {
-    font-size: 2.6rem;
-  }
-  .section-order {
-    background-size: auto;
+    font-size: 2rem;
   }
   .order-box {
     grid-template-columns: 1fr;
@@ -183,18 +155,18 @@
     display: none;
   }
   .order-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem 0 1rem;
+    row-gap: 1rem;
+  }
+  .order-form input,
+  .order-form textarea,
+  .order-form select {
+    margin-bottom: 2rem;
   }
   .order-button {
-    grid-column: 1;
     margin-top: 1.2rem;
-  }
-  .order-form label {
-    font-size: 2.6rem;
-  }
-  .button:link,
-  .button:visited {
-    font-size: 3rem;
+    grid-column: 1 / 3;
   }
   .logo-footer {
     grid-column: 1 / 4;
@@ -202,5 +174,174 @@
   .logo-main:link,
   .logo-main:visited {
     font-size: 3.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo-main:link,
+  .logo-main:visited {
+    font-size: 2.4rem;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .button:link,
+  .button:visited {
+    font-size: 2.2rem;
+  }
+  .button-second:link,
+  .button-second:visited {
+    font-size: 4rem;
+  }
+  .section-about:before {
+    width: 60rem;
+    height: 60rem;
+    bottom: 70%;
+  }
+  .about-box {
+    flex-direction: column;
+  }
+  .about-box__text {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .how-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 6rem;
+  }
+  .how-box__change {
+    flex-direction: column-reverse;
+  }
+  .how-box__text {
+    width: 100%;
+  }
+  .how-img {
+    width: 70%;
+    height: 90%;
+  }
+  .feature-title {
+    font-size: 2.6rem;
+  }
+  .feature-text {
+    font-size: 2rem;
+  }
+  .choice-box {
+    width: 80%;
+  }
+  .order-form {
+    grid-template-columns: 1fr;
+    margin: 0 1rem 0 1rem;
+  }
+  .message-order {
+    grid-column: 1;
+  }
+  .order-button {
+    grid-column: 1;
+  }
+  @media (max-width: 575.98px) {
+    .subheading {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+    .heading-secondary {
+      font-size: 4.6rem;
+      text-align: center;
+    }
+    .header {
+      padding: 1rem 3rem;
+    }
+    .logo-main:link,
+    .logo-main:visited {
+      font-size: 2rem;
+    }
+    .nav-mobile-icon {
+      height: 4rem;
+      width: 4rem;
+    }
+    .nav-link:link,
+    .nav-link:visited {
+      font-size: 1.8rem;
+    }
+    .hero {
+      padding: 3vh 4rem;
+    }
+    .hero-title {
+      font-size: 2.8rem;
+    }
+    .button:link,
+    .button:visited {
+      font-size: 1.6rem;
+    }
+    .button-second:link,
+    .button-second:visited {
+      font-size: 4rem;
+    }
+    .section-about:before {
+      display: none;
+    }
+    .about-box__img {
+      width: 100%;
+    }
+    .about-box__text {
+      margin-top: 5rem;
+      width: 100%;
+    }
+    .how-box {
+      margin-bottom: 6rem;
+    }
+    .how-number {
+      font-size: 6rem;
+    }
+    .how-description {
+      font-size: 2rem;
+    }
+    .how-img {
+      width: 100%;
+    }
+    .section-us {
+      background-size: contain;
+    }
+    .us-boxes {
+      justify-content: center;
+    }
+    .feature {
+      width: 100%;
+      text-align: center;
+    }
+    .choice-box {
+      width: 100%;
+    }
+    .choice-title {
+      font-size: 2.4rem;
+    }
+    .list-text {
+      font-size: 1.6rem;
+    }
+    .choice-button:link,
+    .choice-button:visited {
+      font-size: 1.4rem;
+    }
+    .section-order {
+      background-attachment: unset;
+    }
+    .order-form label {
+      font-size: 1.6rem;
+    }
+    .order-form input,
+    .order-form textarea,
+    .order-form select {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .order-box__options {
+      padding: 4.8rem 2rem 2.4rem 2rem;
+    }
+    .logo-footer {
+      grid-column: 1;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }

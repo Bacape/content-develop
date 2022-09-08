@@ -25,30 +25,6 @@ p {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
-
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-}
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-.grid-center {
-  justify-items: center;
-  align-items: center;
-}
-.grid-start:nth-child(2) {
-  justify-items: start;
-}
 .heading-secondary,
 .heading-tertiary {
   letter-spacing: -0.5px;
@@ -70,11 +46,11 @@ p {
   letter-spacing: -0.5px;
 }
 .subheading {
-  display: inline-block;
-  font-size: 1.8rem;
+  display: block;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #e67e22;
-  margin: 4.8rem 0 1.6rem 0;
+  margin-bottom: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
 }
