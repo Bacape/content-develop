@@ -25,6 +25,11 @@ p {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+.container-galery {
+  max-width: 120rem;
+  margin: auto;
+  position: relative;
+}
 .heading-secondary,
 .heading-tertiary {
   letter-spacing: -0.5px;
