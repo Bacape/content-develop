@@ -165,7 +165,7 @@
   align-items: center;
 }
 .about-img {
-  background-image: url("/img/Foto_face.jpg");
+  background-image: url("../img/Foto_face.jpg");
   width: 18rem;
   height: 18rem;
   position: relative;
@@ -296,15 +296,15 @@
   line-height: 1.8;
   color: #eaeaea;
 }
-.section-galery {
+.section-gallery {
   padding: 3.2rem 0 9.6rem 0;
   background-color: #2b3a4e;
 }
-.galery {
+.gallery {
   display: none;
   position: relative;
 }
-.galery-img {
+.gallery-img {
   width: 100%;
   height: 60rem;
   position: relative;
@@ -312,12 +312,12 @@
   background-position: center;
   border-radius: 1rem;
 }
-.prev,
-.next {
+.gallery-prev,
+.gallery-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  transform: translate(0, -50%);
   padding: 1.6rem;
   color: #edf2ff;
   font-weight: bold;
@@ -326,15 +326,15 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.next {
+.gallery-next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover,
-.next:hover {
+.gallery-prev:hover,
+.gallery-next:hover {
   background-color: rgba(230, 125, 34, 0.834);
 }
-.galery-text {
+.gallery-text {
   color: #edf2ff;
   background-color: rgba(230, 125, 34, 0.75);
   position: absolute;
