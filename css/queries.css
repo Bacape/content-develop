@@ -136,7 +136,7 @@
   .galery-text {
     font-size: 2rem;
   }
-  .dot {
+  .gallery-dot {
     height: 1.6rem;
     width: 1.6rem;
   }
@@ -325,12 +325,12 @@
     .gallery-text {
       font-size: 1.6rem;
     }
-    .dot {
+    .gallery-dot {
       height: 1.2rem;
       width: 1.2rem;
     }
-    .prev,
-    .next {
+    .gallery-prev,
+    .gallery-next {
       font-size: 1.6rem;
       padding: 1rem;
     }

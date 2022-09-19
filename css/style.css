@@ -343,7 +343,7 @@
   bottom: 0.8rem;
   display: inline-block;
 }
-.dot {
+.gallery-dot {
   cursor: pointer;
   height: 2rem;
   width: 2rem;
@@ -354,7 +354,7 @@
   transition: background-color 0.6s ease;
 }
 .open,
-.dot:hover {
+.gallery-dot:hover {
   background-color: #e67e22;
 }
 .fade {
@@ -442,7 +442,7 @@
       rgba(43, 58, 78, 0.511),
       rgba(43, 58, 78, 0.511)
     ),
-    url("../img/white-wall-living-room-have-sofa-decoration-3d-rendering.jpg");
+    url("../img/white-wall.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
