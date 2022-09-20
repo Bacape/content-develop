@@ -72,8 +72,8 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" open", "");
+    dots[i].className = dots[i].className.replace(" gallery-open", "");
   }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " open";
+  dots[slideIndex - 1].className += " gallery-open";
 }
