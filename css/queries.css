@@ -130,6 +130,16 @@
   .feature-text {
     font-size: 2.4rem;
   }
+  .gallery-img {
+    height: 40rem;
+  }
+  .gallery-text {
+    font-size: 2rem;
+  }
+  .gallery-dot {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
   .choice-box {
     width: 47%;
     margin-top: 5rem;
@@ -308,6 +318,21 @@
     .feature {
       width: 100%;
       text-align: center;
+    }
+    .gallery-img {
+      height: 25rem;
+    }
+    .gallery-text {
+      font-size: 1.6rem;
+    }
+    .gallery-dot {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+    .gallery-prev,
+    .gallery-next {
+      font-size: 1.6rem;
+      padding: 1rem;
     }
     .choice-box {
       width: 100%;

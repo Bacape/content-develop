@@ -62,7 +62,7 @@
   padding: 1.2rem 2.4rem;
   border-radius: 0.9rem;
   color: #f8f9fa;
-  background-color: #e67e22;
+  background-color: rgb(230, 125, 34);
 }
 .nav-link.nav-link--main:hover,
 .nav-link.nav-link--main:active {
@@ -165,7 +165,7 @@
   align-items: center;
 }
 .about-img {
-  background-image: url("/img/Foto_face.jpg");
+  background-image: url("../img/Foto_face.jpg");
   width: 18rem;
   height: 18rem;
   position: relative;
@@ -296,6 +296,72 @@
   line-height: 1.8;
   color: #eaeaea;
 }
+.section-gallery {
+  padding: 3.2rem 0 9.6rem 0;
+  background-color: #2b3a4e;
+}
+.gallery {
+  display: none;
+  position: relative;
+}
+.gallery-img {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+.gallery-prev,
+.gallery-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 1.6rem;
+  color: #edf2ff;
+  font-weight: bold;
+  font-size: 2.4rem;
+  transition: 0.6s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.gallery-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.gallery-prev:hover,
+.gallery-next:hover {
+  background-color: rgba(230, 125, 34, 0.834);
+}
+.gallery-text {
+  color: #edf2ff;
+  background-color: rgba(230, 125, 34, 0.75);
+  position: absolute;
+  font-size: 2.4rem;
+  padding: 0.8px 1.2rem;
+  bottom: 0.8rem;
+  display: inline-block;
+}
+.gallery-dot {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem 0.2rem 0 0.2rem;
+  background-color: #edf2ff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.gallery-open,
+.gallery-dot:hover {
+  background-color: #e67e22;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 .section-choice {
   padding: 3.2rem 0 9.6rem 0;
   background-color: #2b3a4e;
@@ -376,7 +442,7 @@
       rgba(43, 58, 78, 0.511),
       rgba(43, 58, 78, 0.511)
     ),
-    url("../img/white-wall-living-room-have-sofa-decoration-3d-rendering.jpg");
+    url("../img/white-wall.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

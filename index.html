@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/queries.css" />
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -88,10 +88,10 @@
               Tehdy se dohodneme na termínu práce.
             </p>
           </div>
-            <img src="img/welcome.jpg" class="how-img" alt="" />
+            <img src="img/welcome.jpg" class="how-img" alt="handshake" />
         </div>
         <div class="how-box how-box__change">
-            <img src="img/paint.jpg" class="how-img" alt="" />
+            <img src="img/paint.jpg" class="how-img" alt="painting" />
           <div class="how-box__text">
             <p class="how-number">02</p>
             <h3 class="heading-tertiary">Vymalujeme</h3>
@@ -111,7 +111,7 @@
               Vám zašleme fakturu.
             </p>
           </div>
-            <img src="img/done.jpg" class="how-img" alt="" />
+            <img src="img/done.jpg" class="how-img" alt="woman" />
       </div>
     </section>
     <!-- US -->
@@ -148,6 +148,35 @@
         </div>
       </div>
     </section>
+    <!-- Gallery -->
+    <section class="section-gallery">
+    <div class="container">
+        <span class="subheading">Menší ukázka</span>
+        <h2 class="heading-secondary">Galerie</h2>
+      <div class="container-gallery">
+        <div class="gallery fade">
+          <div class="gallery-img" style="background-image: url('img/inside_painting.jpg') ;" alt="living room"></div>
+          <div class="gallery-text">Malování</div>
+        </div>
+        <div class="gallery fade">
+          <div class="gallery-img" style="background-image: url('img/inside_wallpapering.jpg') ;" alt="green wall with red sofa"></div>
+          <div class="gallery-text">Tapetování</div>
+        </div>
+        <div class="gallery fade">
+          <div class="gallery-img" style="background-image: url('img/outside_painting.jpg') ;" alt="white house"></div>
+          <div class="gallery-text">Malování fasády</div>
+        </div>
+        <a class="gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="gallery-next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <div style="text-align:center">
+        <span class="gallery-dot" onclick="currentSlide(1)"></span>
+        <span class="gallery-dot" onclick="currentSlide(2)"></span>
+        <span class="gallery-dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    </section>
     <!-- CHOICE -->
     <section class="scroll-spy section-choice" id="nase-sluzby">
       <div class="container">
@@ -155,7 +184,7 @@
         <h2 class="heading-secondary">My zvládneme vše</h2>
         <div class="choice-boxes">
           <div class="choice-box">
-            <div class="choice-img" style="background-image: url('img/painting-2.jpg') ;"></div>
+            <div class="choice-img" style="background-image: url('img/painting-2.jpg') ;" alt="white wall with roller"></div>
             <div class="choice-box-content">
             <span class="choice-title">Malování</span>
             <ul class="list-box">
@@ -180,7 +209,8 @@
           </div>
           </div>
           <div class="choice-box">
-            <div class="choice-img" style="background-image: url('img/wallpapering.jpg') ;">
+            <div class="choice-img" style="background-image: url('img/wallpapering.jpg') ;" alt="
+            working man">
           </div>
             <div class="choice-box-content">
             <span class="choice-title">Tapetování</span>
@@ -242,7 +272,7 @@
             </form>
           </div>
           <div class="box-img">
-            <img src="img/handshake.jpg" class="order-img" alt="" />
+            <img src="img/handshake.jpg" class="order-img" alt="handshake" />
           </div>
         </div>
     </section>
