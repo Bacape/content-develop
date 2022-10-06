@@ -71,7 +71,6 @@
 .nav-button-mobile {
   border: none;
   background: none;
-  cursor: pointer;
   display: none;
 }
 .nav-mobile-icon {
@@ -190,7 +189,7 @@
   font-weight: 400;
 }
 .section-how {
-  padding: 0 0 6.4rem 0;
+  padding: 3.2rem 0 9.6rem 0;
   background-color: #2b3a4e;
   position: relative;
 }
